@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
-<title>一些笔记(持续更新)</title>
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>一些笔记(持续更新) | Achel’s World</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="一些笔记(持续更新)" />
-<meta name="author" content="Achel" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="关于mac bash的优化（2020-02-03更新）" />
-<meta property="og:description" content="关于mac bash的优化（2020-02-03更新）" />
-<link rel="canonical" href="http://localhost:4000/posts/note/" />
-<meta property="og:url" content="http://localhost:4000/posts/note/" />
-<meta property="og:site_name" content="Achel’s World" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-03T00:00:00+08:00" />
-<script type="application/ld+json">
-{"headline":"一些笔记(持续更新)","url":"http://localhost:4000/posts/note/","dateModified":"2020-02-03T00:00:00+08:00","datePublished":"2020-02-03T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/note/"},"author":{"@type":"Person","name":"Achel"},"description":"关于mac bash的优化（2020-02-03更新）","@type":"BlogPosting","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-</head>
-<body>
-  <header class="texture-black">
-    <div class="container"></div><div class="container">
-	<h1>一些笔记(持续更新)</h1>
-	<h4 class="post-description"></h4>
-	<div class="post-date" style="margin-top:20px">
-		Published on Feb 3, 2020
-	</div>
-	<ul class="post-tags"></ul>
-</div>
-</header>
-  <main>
-    <div class="container">
-      <div class="post-container">
-          <h3 id="关于mac-bash的优化2020-02-03更新">关于mac bash的优化（2020-02-03更新）</h3>
+I"�<h3 id="关于mac-bash的优化2020-02-03更新">关于mac bash的优化（2020-02-03更新）</h3>
 
 <ul>
   <li>利用item2+zsh和oh-my-zsh, 可以优化bash使用体验</li>
@@ -128,7 +89,7 @@ $ git push origin master
 <p>因为主题没有安装，参考这个主题的readme文件的installation</p>
 <ul>
   <li><code class="highlighter-rouge">_config.yml</code> 中添加<code class="highlighter-rouge">theme: texture</code></li>
-  <li>执行<code class="highlighter-rouge">$ bundle</code></li>
+  <li><code class="highlighter-rouge">bundle</code></li>
 </ul>
 
 <p>就可以在网页上看到主题了。</p>
@@ -141,24 +102,4 @@ $ bundle install
 $ bundle update
 </code></pre></div></div>
 <p>就可以预览了</p>
-
-      </div>
-
-        <!-- Configure Disqus --></div>
-  </main><div id="texture-picker">
-	<div style="display:flex;justify-content: space-between">
-		<p>Select Texture</p>
-		<p><a id="hidePicker" href="#">Hide</a></p>
-	</div>
-	<div class="texture-colors">
-		<div id="black"></div>
-		<div id="blue"></div>	
-		<div id="red"></div>	
-		<div id="purple"></div>		
-		<div id="green"></div>
-	</div>
-	<p class="info">You can use the <b>showPicker</b> property in _config.yml to hide this picker permanently.</p>
-	<p class="info">You can use the <b>texture</b> property in _config.yml to apply a texture permanently.</p>
-</div>
-<script src="/assets/js/picker.js"></script></body>
-</html>
+:ET

@@ -1,0 +1,69 @@
+I"�	<h3 id="关于mac-bash的优化2020-02-03更新">关于mac bash的优化（2020-02-03更新）</h3>
+
+<ul>
+  <li>利用item2+zsh和oh-my-zsh, 可以优化bash使用体验</li>
+  <li>好像oh-my-zsh是zsh的扩展包（？）</li>
+</ul>
+
+<h3 id="关于git使用">关于git使用</h3>
+
+<ul>
+  <li>目前使用过的命令、个人理解、存在问题
+    <ul>
+      <li>git clone</li>
+      <li>git add</li>
+      <li>git commit</li>
+      <li>git reset –hard origin/master  //强制恢复本地已有修改</li>
+      <li>git pull</li>
+      <li>git checkout test //切换到test分支</li>
+      <li>git stash //暂存已修改的部分</li>
+      <li>git stash pop //（?）忘记了具体的语法</li>
+      <li>git clean -nf //查看untracked file并删除</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="关于idea使用">关于idea使用</h3>
+
+<ul>
+  <li>解决的问题
+    <ul>
+      <li>侧边栏不显示文件夹问题：import modules可以解决</li>
+      <li>没有出现按住command单机无法链接到类的情况</li>
+    </ul>
+  </li>
+  <li>未解决问题
+    <ul>
+      <li>import modules 不能import project的上级文件夹</li>
+      <li>一些maven依赖包没有下载下来</li>
+      <li>使用git update project时候，merge和branch defaults的区别？</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="一些待做">一些待做</h3>
+
+<ul>
+  <li>两个博客怎么在atom上分别上传修改，git同理</li>
+  <li>Achelliu.github.io模板需要更换，考虑使用jekyll或hexo</li>
+  <li>搞清楚上述两者区别，之间是否方便转换，功能差异，是否支持加密和评论功能</li>
+</ul>
+
+<hr />
+
+<h3 id="怎么在同一台电脑上使用两个github账号配置方法2020-04-07更新">怎么在同一台电脑上使用两个GitHub账号，配置方法（2020-04-07更新）</h3>
+<p>ref1: https://www.jianshu.com/p/0be98d91d294</p>
+
+<p>ref2: https://blog.csdn.net/mycafe_/article/details/79231599</p>
+
+<p>ref3: https://blog.csdn.net/IT_xiao_bai/article/details/88563103</p>
+
+<h4 id="主要内容提炼">主要内容提炼：</h4>
+<ol>
+  <li>分别生成ssh，注意密钥文件名不要相同</li>
+  <li>分别添加ssh，粘贴pub文件，全部内容粘贴进去</li>
+  <li>touch config，新建config文件，配置相应的host、hostname、user、identityfile</li>
+  <li>取消全局 git config，分别配置config + ssh测试 -T</li>
+  <li>clone的时候，使用ssh clone，clone时对应config里面的host，如：git clone git@<strong>AchelLiu</strong>.github.com:AchelLiu/AchelLiu.github.io.git</li>
+</ol>
+:ET
