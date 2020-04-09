@@ -483,11 +483,11 @@ header .social li i:hover { color: #999; }
 
 #texture-picker #green { background-color: mediumseagreen; }
 
-.texture-black { background-image: url("/texture/assets/textures/black.jpg"); }
+.texture-black { background-image: url("/assets/textures/black.jpg"); }
 
 .texture-black h2 { color: #999; }
 
-.texture-blue { background-image: url("/texture/assets/textures/blue.jpg"); }
+.texture-blue { background-image: url("/assets/textures/blue.jpg"); }
 
 .texture-blue h2 { color: #ddd; }
 
@@ -495,11 +495,11 @@ header .social li i:hover { color: #999; }
 
 .texture-blue .post-date { color: #ccc; }
 
-.texture-red { background-image: url("/texture/assets/textures/red.jpg"); }
+.texture-red { background-image: url("/assets/textures/red.jpg"); }
 
-.texture-purple { background-image: url("/texture/assets/textures/purple.jpg"); }
+.texture-purple { background-image: url("/assets/textures/purple.jpg"); }
 
-.texture-green { background-image: url("/texture/assets/textures/green.jpg"); }
+.texture-green { background-image: url("/assets/textures/green.jpg"); }
 
 .texture-green .post-date { color: #ccc; }
 
