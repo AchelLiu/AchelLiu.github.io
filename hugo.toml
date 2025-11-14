@@ -1,0 +1,57 @@
+baseURL = 'https://achelliu.github.io/'
+languageCode = 'zh-cn'
+title = "Achel's World"
+theme = 'PaperMod'
+
+[params]
+  author = 'Achel'
+  description = 'Developer. Designer'
+
+  # PaperMod 特性
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+  # 社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Achel"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[params.homeInfoParams]
+  Title = "Achel's World"
+  Content = "Developer. Designer"
+
+# 菜单配置
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 30
+
+# 输出格式
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 永久链接格式（保持与 Jekyll 一致）
+[permalinks]
+  posts = '/posts/:title/'
