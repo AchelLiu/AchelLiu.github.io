@@ -1,32 +1,56 @@
 # CLAUDE.md
 
-文件为 Claude Code (claude.ai/code) 在处理该代码仓库时提供指导。
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # 项目概述
-是一个基于 Jekyll 的静态网站/博客，使用 "Texture" 主题。该站点托管在 GitHub Pages 上，地址为
-https://achelliu.github.io。内容主要是中文，关注农业、农村发展和个人笔记等主题。
+这是一个基于 Hugo 的静态网站/博客，使用 "PaperMod" 主题。该站点托管在 GitHub Pages 上，地址为 https://achelliu.github.io。内容主要是中文，关注农业、农村发展和个人笔记等主题。
+
+项目已经从 Jekyll 迁移到 Hugo，但仍保留了一些 Jekyll 相关文件。
+
 # 关键配置文件
- `_config.yml`：主配置文件，包含站点元数据、主题设置和导航选项
-- `Gemfile` 和 `texture.gemspec`：定义 Ruby 依赖项
-- `index.md`：使用 "home" 布局的主页
+- `hugo.toml`：Hugo 主配置文件，包含站点元数据、主题设置和导航选项
+- `config/_default/*`：Hugo 配置文件目录（如果存在）
+- `themes/PaperMod/`：PaperMod 主题文件
+- `content/posts/`：博客文章目录
+- `.github/workflows/deploy.yml`：GitHub Actions 部署配置
+
 # 内容结构
- `_posts/`：使用 YAML 前置数据的 Markdown 格式博客文章
-- `_layouts/`：不同页面类型（首页、文章、页面）的 HTML 模板
-- `_includes/`：可重用的 HTML 组件（页眉、页脚、导航）
-- `_sass/`：Texture 主题的 SCSS 样式表
-- `assets/`：CSS、JavaScript、字体和图像资源
+- `content/`：Hugo 内容目录
+  - `content/posts/`：博客文章，使用 Markdown 格式和 YAML 前置数据
+- `themes/`：Hugo 主题目录
+- `assets/`：静态资源（CSS、JS、图片等）
+- `static/`：直接复制到站点根目录的静态文件（如果存在）
+
 # 主题特性
-exture 主题支持：
-- 多种配色方案（黑色、蓝色、红色、紫色、绿色）
-- 响应式设计和流体排版
-- 页脚中的社交媒体链接
-- 首页上的文章摘要
-- 可定制的导航
+PaperMod 主题支持：
+- 响应式设计
+- 深色/浅色主题切换
+- 文章目录
+- 搜索功能
+- 社交媒体链接
+- 代码高亮
+- SEO 优化
+
 # 开发工作流程
-. 使用 YAML 前置数据的 Markdown 编写文章
-2. 使用 Jekyll 构建站点并托管在 GitHub Pages 上
-3. 通过 `_config.yml` 和 SCSS 文件进行主题定制
+1. 使用 Markdown 编写文章，保存在 `content/posts/` 目录下
+2. 使用 Hugo 本地预览：`hugo server`
+3. 提交更改到 master 分支，GitHub Actions 会自动部署到 GitHub Pages
+4. 通过 `hugo.toml` 进行主题和站点配置
+
+# 常用命令
+- `hugo server`：本地启动开发服务器，实时预览网站
+- `hugo`：构建静态网站到 `public/` 目录
+- `hugo server --disableFastRender`：禁用快速渲染的本地服务器（用于调试）
+
+# 部署流程
+项目使用 GitHub Actions 自动部署：
+1. 推送更改到 master 分支
+2. GitHub Actions workflow (`.github/workflows/deploy.yml`) 自动触发
+3. 使用 Hugo 构建网站
+4. 部署到 GitHub Pages
+
 # 重要说明
- 文章按时间顺序组织在 `_posts` 目录中
-- 站点使用 Jekyll SEO Tag 插件进行搜索引擎优化
-- 样式通过 SCSS 处理，采用响应式设计原则
-- 主题支持可在 `_config.yml` 中配置的多种纹理背景
+- 文章按时间顺序组织在 `content/posts` 目录中，文件名格式为 `YYYY-MM-DD-title.md`
+- 站点使用 Hugo 的内置功能进行 SEO 优化
+- 主题配置在 `hugo.toml` 文件中
+- 本地开发需要安装 Hugo（推荐版本 0.152.1 或更高）
