@@ -49,9 +49,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          if [ -f package.json ]; then
-            npm install
-          fi
+          npm install
           hugo mod get
 
       - name: Setup Pages
