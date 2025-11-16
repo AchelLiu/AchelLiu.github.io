@@ -22,7 +22,7 @@ hugo mod get
 
 echo.
 echo 5. 构建网站...
-hugo --gc --minify --verbose
+hugo --gc --minify
 
 echo.
 echo 6. 检查生成的文件...
