@@ -1,0 +1,48 @@
+/* 绿色边框效果 - 5% 左右边距 */
+
+/* 设置页面背景为绿色 */
+body {
+    background-color: #85dfc8 !important;
+}
+
+/* 主内容区域 - 90% 宽度，白色背景，小圆角 */
+.main {
+    width: 90% !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 确保 header 也在内容区域内 */
+.header {
+    width: 90% !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    background-color: #ffffff !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 20px !important;
+}
+
+/* footer 也保持一致 */
+.footer {
+    width: 90% !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    background-color: #ffffff !important;
+    border-radius: 0 0 8px 8px !important;
+    padding: 20px !important;
+}
+
+/* 深色模式下的适配 */
+.dark body {
+    background-color: #85dfc8 !important;
+}
+
+.dark .main,
+.dark .header,
+.dark .footer {
+    background-color: var(--theme) !important;
+}
